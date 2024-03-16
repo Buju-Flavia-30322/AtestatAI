@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artificial Intelligence Presentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="nav-title">IA</h1>
+        <button class="nav-button" onclick="window.location.href='#about'">Despre</button>
+        <div class="dropdown">
+            <button class="nav-button dropbtn" onclick="toggleDropdown()">Informații</button>
+            <div class="dropdown-content" id="infoDropdown">
+                <a onclick="scrollToSection('#info')">Informații generale</a>
+                <a onclick="scrollToSection('#history')">Istoria IA</a>
+                <a onclick="scrollToSection('#applications')">Aplicații</a>
+                <a onclick="scrollToSection('#future')">Viitorul IA</a>
+            </div>
+        </div>
+        <button class="nav-button" onclick="window.location.href='#contact'">Contact</button>
+    </nav>
+    
+    <div id="sections-container">
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Inteligența Artificială</h1>
+                    <p>Bine ai venit pe pagina mea! Aici vei găsi informații relevante despre evoluția și impactul inteligentei artificiale în societatea contemporană. Scopul nostru este să explorăm diverse aspecte ale acestui domeniu fascinant și să aducem claritate asupra conceptelor cheie.</p>
+                </div>
+                <div class="about-image">
+                    <img src="about_AI-remove.png" alt="AI Image">
+                </div>
+            </div>
+        </section>
+        
+        <section id="info">
+            <div class="info-container">
+                <div class="info-text-column">
+                    <h2>Informații Generale</h2>
+                    <p>
+                        Inteligența artificială (IA) se referă la capacitatea unui sistem de calcul de a efectua sarcini care necesită în mod tradițional inteligență umană. Aceste sisteme sunt programate să analizeze date, să facă predicții, să rezolve probleme și să învețe din experienţă, simulând astfel procesele cognitive umane.
+                    </p>
+                </div>
+                <div class="info-image">
+                    <img src="future.jpg" alt="AI Image">
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>Istoria Inteligenței Artificiale</h2>
+            <div class="point">
+                <img class="matrix-image" src="matrix1.jpg" alt="Image 1">
+                <div class="text-box">
+                    <p>Primele Dezvoltări (anii 1950-1960): Domeniul IA a început să prindă contur în anii 1950 și 1960 cu pionieri precum Alan Turing, care a propus Testul Turing ca măsură a inteligenței unei mașini, și John McCarthy, care a inventat termenul "inteligență artificială" și a organizat Conferința Dartmouth din 1956, adesea considerată nașterea IA ca domeniu de studiu. În această perioadă, cercetătorii au explorat IA simbolică, concentrându-se pe sistemele bazate pe reguli și raționamentul logic.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="text-box">
+                    <p>Iarna IA (anii 1970-1980): În ciuda optimismului inițial, progresul în IA s-a confruntat cu provocări semnificative în anii 1970 și 1980, conducând la ceea ce a devenit cunoscut sub numele de "iarna IA". Finanțarea pentru cercetarea în IA a scăzut din cauza așteptărilor neîndeplinite și a limitărilor tehnice. Această perioadă a marcat o schimbare de la IA simbolică către alte abordări, cum ar fi sistemele expert și rețelele neurale. Cu toate acestea, aceste metode au întâmpinat, de asemenea, provocări în scalabilitate și aplicabilitate în lumea reală.</p>
+                </div>
+                <img class="matrix-image" src="matrix2.jpg" alt="Image 2">
+            </div>
+            <div class="point">
+                <img class="matrix-image" src="matrix3.jpg" alt="Image 3">
+                <div class="text-box">
+                    <p>Revenirea și IA Modernă (anii 1990-prezent): Sfârșitul anilor 1990 și începutul anilor 2000 au marcat o revenire a interesului în IA, alimentată de progrese în puterea de calcul, disponibilitatea seturilor de date mari și avansuri în algoritmii de învățare automată. Această perioadă a văzut ascensiunea tehnicilor de învățare automată, inclusiv învățarea supervizată, învățarea nesupervizată și învățarea prin recompensă. Evenimente notabile includ înfrângerea campionului mondial la șah Garry Kasparov de către Deep Blue al IBM în 1997 și, mai recent, dezvoltarea modelelor de învățare profundă precum rețelele neurale convoluționale (CNN-uri) și rețelele neurale recurente (RNN-uri), care au obținut performanțe remarcabile în diverse sarcini precum recunoașterea imaginilor, procesarea limbajului natural și jocurile.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications">
+            <div class="section-box">
+                <h2>Aplicații ale Inteligenței Artificiale</h2>
+                <div class="ai-container">
+                    <!-- Medicine -->
+                    <div class="ai-box">
+                        <h3>Medicină</h3>
+                        <div class="ai-points">
+                            <p><span class="bold-with-arrow">Diagnosticare asistată de IA:</span> Utilizarea algoritmilor de învățare automată pentru interpretarea imaginilor medicale și analizarea datelor pentru diagnostic rapid și precis.</p>
+                            <p><span class="bold-with-arrow">Identificarea de noi medicamente:</span> Utilizarea Inteligenței Artificiale pentru analiza datelor moleculare și identificarea potențialilor compuși farmaceutici pentru tratamentul diferitelor afecțiuni.</p>
+                            <p><span class="bold-with-arrow">Personalizarea tratamentelor:</span> Crearea de planuri de tratament personalizate bazate pe datele pacientului, istoricul medical și factorii de risc, pentru îmbunătățirea rezultatelor și reducerea efectelor secundare.</p>
+                        </div>
+                    </div>
+                    <!-- Transport -->
+                    <div class="ai-box">
+                        <h3>Transport</h3>
+                        <div class="ai-points">
+                            <p><span class="bold-with-arrow">Vehicule autonome:</span> Utilizarea tehnologiilor AI pentru dezvoltarea și operarea vehiculelor care pot călători fără intervenție umană, îmbunătățind siguranța și eficiența transportului.</p>
+                            <p><span class="bold-with-arrow">Optimizare a rutelor:</span> Utilizarea algoritmilor de învățare automată pentru analiza datelor de trafic și a condițiilor rutiere pentru a găsi cele mai rapide și eficiente rute de călătorie.</p>
+                            <p><span class="bold-with-arrow">Gestionarea traficului:</span> Implementarea sistemelor AI pentru monitorizarea și controlul traficului în timp real, reducând congestionarea și îmbunătățind fluxul de circulație.</p>
+                        </div>
+                    </div>
+                    <!-- Finance -->
+                    <div class="ai-box">
+                        <h3>Finanțe</h3>
+                        <div class="ai-points">
+                            <p><span class="bold-with-arrow">Analiză predictivă pentru investiții:</span> Utilizarea algoritmilor AI pentru analiza datelor financiare și a tendințelor pieței pentru a identifica oportunități de investiții și a lua decizii informate.</p>
+                            <p><span class="bold-with-arrow">Detectarea fraudelor:</span>Implementarea sistemelor AI pentru monitorizarea tranzacțiilor și identificarea schemelor frauduloase sau comportamentelor suspecte în timp real.</p>
+                            <p><span class="bold-with-arrow">Gestionarea riscurilor:</span> Utilizarea modelelor predictive pentru evaluarea și gestionarea riscurilor financiare, inclusiv riscurile de credit și de piață.</p>
+                        </div>
+                    </div>
+                    <!-- Personal Assistance -->
+                    <div class="ai-box">
+                        <h3>Asistență personală</h3>
+                        <div class="ai-points">
+                            <p><span class="bold-with-arrow">Asistenți virtuali:</span> Crearea și implementarea asistenților virtuali precum Siri, Alexa și Google Assistant, care pot oferi informații, răspunde la întrebări și efectua diverse sarcini la comandă folosind tehnologii AI de înțelegere a limbajului natural.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Arrows -->
+            <div class="navigation-arrows">
+                <button class="prev-button">&lt;</button>
+                <button class="next-button">&gt;</button>
+            </div>
+        </section>
+
+
+        <section id="future">
+            <div class="future-container">
+                <h2>Viitorul Inteligenței Artificiale</h2>
+                <p>Se anticipă că IA va continua să se extindă în toate aspectele vieții noastre, având un impact profund în domenii precum sănătatea, educația, afacerile și societatea în ansamblu.
+                    Avansurile în domenii precum învățarea profundă, învățarea prin recompense și procesarea limbajului natural vor accelera progresele în IA.
+                    Se pune accent pe aspectele etice și sociale ale dezvoltării și utilizării IA, inclusiv înțelegerea și gestionarea riscurilor legate de siguranță și confidențialitate.</p>
+            </div>
+                <!-- YouTube Video Embed -->
+            <div class="video-container">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dv9q7Ema40k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+              <h1>Vă mulțumim pentru accesarea site-ului</h1>
+              <div class="content">
+                <div class="email">
+                  <h2>Contact</h2>
+                  <img src="email_logo.jpg" alt="Email Logo">
+                  <p>harvatkarina01@gmail.com</p>
+                </div>
+                <div class="author">
+                  <h2>Autor</h2>
+                  <p>Horvat Karina</p>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <!-- Script for smooth scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleDropdown() {
+            document.getElementById("infoDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        //ARROWS java script sa se miste cu sagetile boxurile alea
+        document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const aiContainer = document.querySelector('.ai-container');
+
+    let scrollAmount = 0;
+    const scrollStep = 300; // Adjust scroll step as needed
+
+    prevButton.addEventListener('click', function() {
+        scrollAmount -= scrollStep;
+        aiContainer.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    nextButton.addEventListener('click', function() {
+        scrollAmount += scrollStep;
+        aiContainer.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
+</body>
+</html>
+
+
